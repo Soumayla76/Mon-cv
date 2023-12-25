@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+@font-face {
+    font-family:"Raleway";
+    src: url(/assets/fonts/Raleway-LightItalic.ttf);
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+#container{
+    font-family: "Raleway", Verdana;
+    max-width: 1160px;
+    min-height: 1940px;
+    background-color: #782221;
+    margin: 20px;
+    border: 2px solid #2c1d27;
+    margin: 0 auto;
+}
+
+/* EN TETE */
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 2px #2c1d27;     
+}
+#en-tête img:hover{
+    cursor: zoom-in;   
+}
+
+h1,h2,h3,h4{
+    font-family: 'Lato', sans-serif;    
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+#en-tête p{
+    font-size: 1.2rem;
+}
+
+#en-tête{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+nav #info address{
+    display: flex;
+    background-color: #2c1d27;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;    
+}
+
+address a{
+    color: aliceblue;
+    text-decoration: none;    
+}
+
+address :hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+main{
+    min-height: 1659px;
+    position: relative;      
+}
+
+
+/* A PROPOS */
+
+section-gauche{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+section-gauche h2{
+    text-indent: 20px;
+    color: black;
+    background-color: #dbc2a4;
+        
+}
+section-gauche p{
+    text-indent: 50px;
+    margin-inline-start: 20px;   
+}
+
+
+ /* LE CORPS PRINCIPAL */
+
+ section-principal{
+    min-height: 1655px;
+    width: 60%;
+    background: rgb(255 255 255);
+    border: 2px solid #2c1d27;
+    color: #2c1d27;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 3%;
+    padding-left: 3%;    
+}
+    
+aside h2{
+    font-size: 1.5rem;
+    text-indent: 20px;
+    background-color: #dbc2a4;
+    color: black;
+}
+aside h2:hover{
+    cursor: default;
+    border-right: 10px solid #782221;
+    padding-left: 10px;
+}
+
+aside h4{
+    margin: 5px;
+    font-size: 1.2rem; 
+    margin: 5px;
+    margin-inline-start: 20px;
+    
+}
+ aside p{
+    margin-inline-start: 20px;
+    font-weight: bolder;
+}
+ 
+ aside ul{
+    margin-inline-start: 20px;   
+}
+
+ 
+ /* FOOTER */
+
+footer{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#footer-service{
+    height: 90px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;  
+}
+
+footer li img{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;     
+}
+
+footer li :hover{
+    opacity: 80%;
+    cursor: pointer;    
+}
+
+footer p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1190px){
+    #container{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 560px){
+    #container{
+        font-size: 0.9em;    
+    }
+}
+
+
+
+@media screen and (max-width: 560px){
+    h1{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 560px){
+    #en-tête p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    nav #info address {
+        display: block;
+        text-align: center;    
+    }
+}
+
+
+
+@media screen and (max-width: 1171px){
+    section-gauche{
+        width: 100%;    
+    }
+}
+
+
+@media screen and (max-width: 1171px){
+    section-principal{
+        display: block;
+        position: static;
+        width: 93.9%;
+        border: 2px solid #2c1d27;
+        border-left-width: 0;
+    }
+} 
+    
+
+
+@media screen and (max-width: 1171px){
+    footer{
+        margin-top: 0;
+    }
+}
+
+
+
+
+/* @media screen and (max-width: 560px){
+    aside{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px){
+    section-gauche{
+        display: block;
+        text-align: center;
+    }
+} */
